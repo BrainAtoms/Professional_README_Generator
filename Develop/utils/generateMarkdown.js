@@ -15,34 +15,52 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   let link;
 
-  switch (license) {
-    case "MIT":
-      link = "https://mit-license.org/";
-      break;
-    case "GPL":
-      link = "https://www.gnu.org/licenses/gpl-3.0.en.html";
-      break;
-    case "Apache":
-      link = "https://www.apache.org/licenses/LICENSE-2.0.html";
-      break;
-    case "MPL":
-      link = "https://opensource.org/license/mpl-2-0/";
-      break;
+  if ((license = "MIT")) {
+    link = "https://mit-license.org/";
+  } else if ((license = "GPL")) {
+    link = "https://www.gnu.org/licenses/gpl-3.0.en.html";
+  } else if ((license = "Apache")) {
+    link = "https://www.apache.org/licenses/LICENSE-2.0.html";
+  } else if ((license = "MPL")) {
+    link = "https://opensource.org/license/mpl-2-0/";
+  } else {
+    link = "";
   }
   return link;
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  let section = "";
+function renderLicenseSect(license) {
+  let licenseSect = "";
+
+  // if a license has been selected, create License section
+  // with link to license information
+  if (license !== "None") {
+    licenseSect += "## License\n";
+    licenseSect +=
+      "Get information about this license at " + renderLicenseLink(license);
+  }
+  return licenseSect;
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+  return `\n# ${data.title} \n## Description \n${
+    data.description
+  } \n## Table of Contents \n[Installation](#installation)\n[Usage](#usage)\n[License](#license)\n[Contributions](#contributions)\n[Tests](#tests)\n[Questions](#questions) \n## Installation \n${
+    data.installation
+  } \n## Usage \n${data.use} \n${renderLicenseSect()} \n${
+    data.license
+  } \n## ${renderLicenseBadge(data.license)} \n## Contributing \n${
+    data.contributions
+  } \n## Tests\n${
+    data.test
+  } \n## Questions \nFind me at [HERE](http://github.com/${
+    data.username
+  }) \nEmail me at ${data.email}
 
-`;
+  `;
 }
 
 module.exports = generateMarkdown;
