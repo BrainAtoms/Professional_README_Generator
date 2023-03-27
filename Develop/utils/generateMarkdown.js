@@ -49,7 +49,7 @@ function generateMarkdown(data) {
     data.license
   )} \n## Description \n${
     data.description
-  } \n## Table of Contents \n[Installation](#installation)\n[Usage](#usage)\n[License](#license)\n[Contributions](#contributions)\n[Tests](#tests)\n[Questions](#questions) \n## Installation \n${
+  } \n## Table of Contents \n[Installation](#installation) \n[Usage](#usage) \n[License](#license) \n[Contributions](#contributions) \n[Tests](#tests) \n[Questions](#questions) \n## Installation \n${
     data.installation
   } \n## Usage \n${data.use} \n## License \n${data.license} \n${renderLicenseSect()} \n## Contributing \n${data.contributions} \n## Tests\n${
     data.test
