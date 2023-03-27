@@ -1,7 +1,8 @@
 
-# b 
+# Professional_README_Generator 
+## ![License Badge](https://shields.io/badge/license-None-green) 
 ## Description 
-b 
+The Professional_README_Generator creates a new README.md file based on user input. 
 ## Table of Contents 
 [Installation](#installation)
 [Usage](#usage)
@@ -10,19 +11,18 @@ b
 [Tests](#tests)
 [Questions](#questions) 
 ## Installation 
-b 
+npm install 
 ## Usage 
-b 
-## License
+The user answers the questions and then a README.md file is generated based off of those answers. 
+## License 
+None 
 Get information about this license at https://mit-license.org/ 
- 
-## ![License Badge](https://shields.io/badge/license--green) 
 ## Contributing 
-b 
+Yes 
 ## Tests
-b 
+No tests 
 ## Questions 
-Find me at [HERE](http://github.com/b) 
-Email me at b
+Find me at [HERE](http://github.com/Brain_Atoms) 
+Email me at badams6453@gmail.com
 
   

@@ -26,7 +26,7 @@ const questions = [
     message: "Enter how your project is to be used by others:",
   },
   {
-    type: "checkbox",
+    type: "list",
     name: "license",
     message: "Select a license for your project:",
     choices: ["None", "MIT", "GPL", "Apache", "MPL"],
