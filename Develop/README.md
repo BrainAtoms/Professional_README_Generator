@@ -2,7 +2,7 @@
 # Professional_README_Generator 
 ## ![License Badge](https://shields.io/badge/license-None-green) 
 ## Description 
-The Professional_README_Generator creates a new README.md file based on user input. 
+The Professional_README_Generator creates a new README.md file based off of user input 
 ## Table of Contents 
 [Installation](#installation)
 [Usage](#usage)
@@ -13,7 +13,7 @@ The Professional_README_Generator creates a new README.md file based on user inp
 ## Installation 
 npm install 
 ## Usage 
-The user answers the questions and then a README.md file is generated based off of those answers. 
+The user answers the posited questions and a README.md file is generated based on their answers. 
 ## License 
 None 
 Get information about this license at https://mit-license.org/ 
